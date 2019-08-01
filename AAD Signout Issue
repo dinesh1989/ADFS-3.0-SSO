@@ -1,0 +1,8 @@
+Open ID Microsoft Link : 
+
+https://docs.microsoft.com/bs-latn-ba/azure/active-directory/develop/v1-protocols-openid-connect-code?view=azureelasticdbjobsps-0.8.33#send-a-sign-out-request
+
+if (isClearLogout && auth_Type == 'AAD') {
+        var host = window.location.host;
+        window.open("https://login.microsoftonline.com/common/oauth2/logout?post_logout_redirect_uri=" + "https://" + host + "/Login.aspx", '_self', 'hidden=yes', 'clearsessioncache=yes', 'clearcache=yes');
+}
