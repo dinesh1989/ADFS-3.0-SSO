@@ -1,0 +1,7 @@
+New-AzureADPolicy -Definition @("{`"HomeRealmDiscoveryPolicy`":{`"AccelerateToFederatedDomain`":true, `"PreferredDomain`":`"lolctech.com`"}}") -DisplayName MultiDomainAutoAccelerationPolicy -Type HomeRealmDiscoveryPolicy
+
+Add-AzureADServicePrincipalPolicy -Id 02724cf7-528f-4197-bd1a-dd3f703465d1 -RefObjectId c9245dcc-3cce-4cf5-84e7-9c70451fe2f5
+
+Get-AzureRmADServicePrincipal -ApplicationId 73a4679c-0ed4-4ccf-8bc5-585b906cfb60
+
+Get-AzureADPolicyAppliedObject -ObjectId c9245dcc-3cce-4cf5-84e7-9c70451fe2f5
